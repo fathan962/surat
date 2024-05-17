@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CRUD App</h1>
+    <form id="crud-form">
+        <input type="text" id="name" placeholder="Enter name" required>
+        <input type="text" id="email" placeholder="Enter email" required>
+        <button type="submit">Add</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="user-list"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
