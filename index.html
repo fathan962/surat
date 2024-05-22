@@ -3,26 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD App</title>
+    <title>Download JSON to Word/PDF</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>CRUD App</h1>
-    <form id="crud-form">
-        <input type="text" id="name" placeholder="Enter name" required>
-        <input type="text" id="email" placeholder="Enter email" required>
-        <button type="submit">Add</button>
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody id="user-list"></tbody>
-    </table>
+    <h1>Download JSON Data as Word/PDF</h1>
+    <button id="downloadWord">Download as Word</button>
+    <button id="downloadPDF">Download as PDF</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPDF/2.3.1/jspdf.umd.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
