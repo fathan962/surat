@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "attendance": "Present"
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "attendance": "Absent"
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "attendance": "Present"
+  },
+  {
+    "id": 4,
+    "name": "David",
+    "attendance": "Absent"
+  },
+  {
+    "id": 5,
+    "name": "Eve",
+    "attendance": "Present"
+  }
+]
