@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download JSON to Word/PDF</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Attendance</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Download JSON Data as Word/PDF</h1>
-    <button id="downloadWord">Download as Word</button>
-    <button id="downloadPDF">Download as PDF</button>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPDF/2.3.1/jspdf.umd.min.js"></script>
-    <script src="script.js"></script>
-    <script src="jspdf.min.js"></script>
-<script src="jspdf.plugin.autotable.min.js"></script>
-<script>
-  var doc = new jsPDF()
-  doc.autoTable({ html: '#my-table' })
-  doc.save('table.pdf')
-</script>
+  <h1>Student Attendance</h1>
+  <table id="attendanceTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Attendance</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <h2>Add New Student</h2>
+  <form id="studentForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="attendance">Attendance:</label>
+    <select id="attendance" name="attendance" required>
+      <option value="Present">Present</option>
+      <option value="Absent">Absent</option>
+    </select>
+    <button type="submit">Add Student</button>
+  </form>
+  <script src="script.js"></script>
 </body>
 </html>
